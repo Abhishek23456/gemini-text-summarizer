@@ -2,8 +2,6 @@
 
 A Streamlit web application that summarizes long text or articles using **Google Gemini 2.0 Flash API**.
 
-Built as part of the **Junior Python/AI Developer Task 3** submission.
-
 ---
 
 ## 🚀 Live Demo
@@ -18,8 +16,7 @@ Built as part of the **Junior Python/AI Developer Task 3** submission.
 
 - 🔎 Summarizes text using Google's Gemini LLM (Flash 2.0)
 - ⚡ Simple, clean UI with [Streamlit](https://streamlit.io)
-- 📝 Logs summaries to a local file (`summary_log.txt`)
-- 🔐 API key handled securely (via `.env` or `st.secrets`)
+- 🔐 API key handled securely (via `st.secrets`)
 - ☁️ Deployed live using Streamlit Cloud
 
 ---
