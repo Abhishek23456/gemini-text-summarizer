@@ -60,4 +60,44 @@ If you want to deploy:
 2. Go to Streamlit Cloud
 3. Create a new app
 4. Set the main file path as app.py
-5. In the Secrets tab, add: GEMINI_API_KEY = "your_api_key_here"
+5. In the Secrets tab, add api key
+
+## 🧪 Usage
+
+### ✅ 1. Local Usage
+
+Once the app is running locally (`streamlit run app.py`), it will open a browser window with the following interface:
+
+#### 🖥️ Interface:
+- A **text area** to paste or type any long text/article.
+- A **"Summarize" button** to generate the summary.
+- Below the button, the **summary result** is displayed.
+
+#### 🧪 Steps:
+1. Paste any paragraph or article (e.g., from Wikipedia or a news site).
+2. Click the **Summarize** button.
+3. Wait a moment — the Gemini API will return a clean summary.
+4. View the output on the same screen.
+
+---
+
+### 🌍 2. Streamlit Cloud Usage
+
+The hosted version of the app works exactly the same:
+
+🔗 Visit: [app](https://gemini-text-summarizer-8u6p4zk64hwv6gwvm4acdr.streamlit.app/)
+
+#### Steps:
+1. Enter the text you want to summarize.
+2. Click **Summarize**.
+3. Get the summary instantly below.
+
+---
+
+### ✨ Sample Input/Output
+
+#### Input:
+Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, and self-correction. AI applications include expert systems, natural language processing, speech recognition, and machine vision.
+
+#### Output:
+Artificial Intelligence (AI) is the ability of computers to mimic human intelligence, such as learning and reasoning. Applications include NLP, speech recognition, and machine vision.
