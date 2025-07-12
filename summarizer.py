@@ -1,9 +1,10 @@
 # summarizer.py
 
+import os
 import requests
-import streamlit as st  # Needed for Streamlit Secrets
+import streamlit as st  # for accessing Streamlit secrets
 
-# Read API key from Streamlit secrets (set via cloud UI)
+# Load Gemini API key from Streamlit secrets
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # Gemini 2.0 Flash endpoint
@@ -13,7 +14,13 @@ def summarize_text(text: str) -> str:
     if not GEMINI_API_KEY:
         return "❌ API Key not set. Please set GEMINI_API_KEY in Streamlit secrets."
 
-    prompt = f"Summarize the following text:\n\n{text}"
+    word_count = len(text.split())
+
+    # Strict prompt to ensure short summary
+    prompt = (
+        f"Summarize the following text very briefly. Ensure the summary is significantly shorter "
+        f"than the original input. Avoid restating every detail:\n\n{text}"
+    )
 
     headers = {
         "Content-Type": "application/json",
@@ -31,6 +38,7 @@ def summarize_text(text: str) -> str:
     }
 
     try:
+        # Send request to Gemini API
         response = requests.post(
             GEMINI_URL,
             headers=headers,
@@ -43,9 +51,18 @@ def summarize_text(text: str) -> str:
         data = response.json()
         summary = data['candidates'][0]['content']['parts'][0]['text']
 
-        # Log result (optional)
+        # Ensure summary is actually shorter
+        if len(summary.split()) >= word_count:
+            summary = (
+                "⚠️ Gemini's response was longer than the input. Please try rephrasing your input "
+                "or reducing its length for a better result."
+            )
+
+        # Log input and summary for evaluation
         with open("summary_log.txt", "a", encoding="utf-8") as f:
-            f.write("\n---\nInput:\n" + text[:500] + "\n\nSummary:\n" + summary + "\n")
+            f.write("\n---\n")
+            f.write(f"Input ({word_count} words):\n{text[:500]}\n\n")
+            f.write("Summary:\n" + summary + "\n")
 
         return summary
 
