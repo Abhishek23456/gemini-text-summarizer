@@ -1,0 +1,55 @@
+
+---
+Input:
+No one remembered when the lighthouse last shone.
+
+Perched at the edge of Blackrock Cliffs, it had once been a guardian for ships and souls alike. Now it stood silent, battered by sea winds and time, its great lamp cold in its tower.
+
+Locals said the last lightkeeper never left. They whispered of a man in a heavy coat, seen only at dusk, moving through the fog. His boots made no sound. His lantern gave off no light. But every time a storm rolled in from the east, people claimed they saw the beam
+
+Summary:
+The abandoned lighthouse on Blackrock Cliffs is rumored to be haunted by its last lightkeeper, who vanished but is sometimes seen, seemingly relighting the lamp during storms. Fear prevents investigation, especially after a previous attempt resulted in another disappearance. A cryptic letter appeared demanding the light be extinguished, after which the ghostly figure disappeared, but the storms intensified, and the rocks seemed to move closer to shore.
+
+
+---
+Input:
+The walls do not echo here,
+only breathe,
+soft as dust settling
+on a forgotten book.
+
+The world outside keeps
+its wars, its weather,
+its noise like a clenched fist
+pounding a door I won’t open.
+
+I water the plant,
+watch it lean toward the window
+like it still believes
+in sunlight.
+
+Somewhere, people
+are making plans,
+calling names,
+falling in love.
+
+But in this quiet room,
+I have tea,
+and a chair
+that doesn’t ask questions.
+
+
+
+Summary:
+The poem depicts a person finding solace and quietude in a solitary room, shielded from the chaos and noise of the outside world. They find comfort in simple rituals, like watering a plant, and the silent companionship of tea and a comfortable chair. The room represents a sanctuary where they can escape the complexities and uncertainties of life, even as they are aware of the world's ongoing events and activities. The poem emphasizes a sense of peaceful isolation and contentment in simple things.
+
+
+---
+Input:
+Unlock a new level of productivity with the LumaKey Smart Keyboard—the world’s first adaptive typing system designed to optimize your workflow in real time. With customizable RGB backlighting, AI-powered key mapping, and whisper-quiet mechanical switches, LumaKey doesn’t just respond to your touch—it learns from it.
+
+Whether you're coding, writing, or gaming, LumaKey adjusts to your needs on the fly, highlighting shortcuts, predicting intent, and reducing hand fatigue. Stay focused, stay efficie
+
+Summary:
+The LumaKey Smart Keyboard is an AI-powered keyboard designed to boost productivity. It features customizable RGB lighting, AI-powered key mapping that learns your typing habits, and ergonomic design. Key features include AI-enhanced key mapping, an ergonomic layout, multi-device Bluetooth sync, USB-C charging, and various RGB lighting modes. It's available in three colors: Matte Black, Arctic White, and Midnight Blue.
+
